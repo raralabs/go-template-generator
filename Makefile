@@ -24,3 +24,7 @@ gen:
 	@make .go-module
 	@make .gqlgen
 	@go run main.go
+
+clean-generated:
+	@echo "Cleaning generated files..."
+	@rm -r ./graph go.mod go.sum gqlgen.yml tools.go
